@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap");
+::-moz-selection {
+  background-color: #E3E6F3;
+  color: #000;
+}
+::selection {
+  background-color: #E3E6F3;
+  color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -538,6 +547,184 @@ footer .copyright {
   text-align: center;
 }
 
+#page-header {
+  background-image: url(/assets/img/banner/b1.jpg);
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #1ABC9C;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#pro-details {
+  display: flex;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+#pro-details .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-grp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#pro-details .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#pro-details .single-pro-details h4 {
+  font-size: 40px;
+  padding: 40px 0px 20px 0px;
+  line-height: 30px;
+}
+
+#pro-details .single-pro-details h2 {
+  font-size: 34px;
+}
+
+#pro-details .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#pro-details .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#pro-details .single-pro-details input:focus {
+  outline: none;
+}
+
+#pro-details .single-pro-details button {
+  background-color: #1ABC9C;
+  color: #fff;
+}
+
+#pro-details .single-pro-details span {
+  line-height: 25px;
+}
+
+/*Blog Section */
+#page-header.blog-header {
+  background-image: url(/assets/img/banner/b19.jpg);
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#blog img {
+  width: 80%;
+  height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-details h3 {
+  font-size: 30px;
+}
+
+.blog-details p {
+  font-size: 20px;
+}
+
+.blog-details a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.blog-details a:hover {
+  color: #1ABC9C;
+  cursor: pointer;
+}
+
+.blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+.blog-details a:hover::after {
+  color: #1ABC9C;
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -9;
+}
+
 @media screen and (max-width: 880px) {
   html,
   body {
@@ -681,5 +868,45 @@ footer .copyright {
   }
   #newsletter .form {
     width: 100%;
+  }
+  /*SIngle product details*/
+  #pro-details {
+    display: flex;
+    flex-direction: column;
+  }
+  #pro-details .single-pro-image {
+    width: 100%;
+  }
+  #pro-details .single-pro-details {
+    width: 100%;
+  }
+  #pro-details .single-pro-details h4 {
+    font-size: 35px;
+  }
+  #pro-details .single-pro-details h2 {
+    font-size: 24px;
+  }
+  /*Blof Section Details*/
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  #blog img {
+    width: 100%;
+  }
+  #blog .blog-details {
+    width: 100%;
+  }
+  .blog-details h3 {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
